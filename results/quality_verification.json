@@ -1,0 +1,66 @@
+{
+  "identical": 2,
+  "different": 8,
+  "examples": [
+    {
+      "prompt": "The theory of general relativity describes",
+      "standard": "The theory of general relativity describes the gravitational field as a curvature of space-time. The curvature of space-time is described by the metric tensor. The metric tensor is a symmetric, second",
+      "speculative": "The theory of general relativity describes the gravitational field as a curvature of space-time. The curvature of space-time is described by the metric tensor. The metric tensor is a symmetric, second",
+      "identical": true
+    },
+    {
+      "prompt": "In machine learning, gradient descent is used to",
+      "standard": "In machine learning, gradient descent is used to find the minimum of a function. It is a very powerful tool that can be used to solve many problems in machine learning. In this article, we will discus",
+      "speculative": "In machine learning, gradient descent is used to find the minimum of a function. It is a very powerful tool that can be used to solve many problems in machine learning. In this article, we will discus",
+      "identical": false
+    },
+    {
+      "prompt": "The largest planet in our solar system is",
+      "standard": "The largest planet in our solar system is Jupiter. It is a gas giant, which means that it is mostly made up of gases. Jupiter is made up of 90% hydrogen and 10% helium. It is also the fifth planet fro",
+      "speculative": "The largest planet in our solar system is Jupiter. It is a gas giant, which means that it is mostly made up of gases. Jupiter is made up of 90% hydrogen and 10% helium. It is also the fifth planet fro",
+      "identical": false
+    },
+    {
+      "prompt": "Python is a popular programming language because",
+      "standard": "Python is a popular programming language because it is easy to learn and use. It is also a versatile language that can be used for a variety of tasks. One of the most popular uses of Python is for web",
+      "speculative": "Python is a popular programming language because it is easy to learn and use. It is also a versatile language that can be used for a variety of tasks. One of the most popular uses of Python is for web",
+      "identical": false
+    },
+    {
+      "prompt": "The French Revolution began in the year",
+      "standard": "The French Revolution began in the year 1789. It was a time of great change and upheaval in France. The revolution was sparked by a number of factors, including the high taxes and the poor living cond",
+      "speculative": "The French Revolution began in the year 1789. It was a time of great change and upheaval in France. The revolution was sparked by a number of factors, including the high taxes and the poor living cond",
+      "identical": true
+    },
+    {
+      "prompt": "Photosynthesis is the process by which plants",
+      "standard": "Photosynthesis is the process by which plants convert light energy into chemical energy. This energy is stored in the form of glucose, which is then used by the plant to grow and reproduce. Photosynth",
+      "speculative": "Photosynthesis is the process by which plants convert light energy into chemical energy. This energy is stored in the form of glucose, which is then used by the plant to grow and reproduce. Photosynth",
+      "identical": false
+    },
+    {
+      "prompt": "The speed of light in a vacuum is approximately",
+      "standard": "The speed of light in a vacuum is approximately 299,792,458 meters per second (186,282 miles per second). The speed of light is the fastest speed at which any object or form of energy, including light",
+      "speculative": "The speed of light in a vacuum is approximately 299,792,458 meters per second (186,282 miles per second). The speed of light is the fastest speed at which any object or form of energy, including light",
+      "identical": false
+    },
+    {
+      "prompt": "Neural networks are inspired by the structure of",
+      "standard": "Neural networks are inspired by the structure of the human brain. They are a type of machine learning algorithm that can be used to solve complex problems. Neural networks are made up of a series of i",
+      "speculative": "Neural networks are inspired by the structure of the human brain. They are a type of machine learning algorithm that can be used to solve complex problems. Neural networks are made up of a series of i",
+      "identical": false
+    },
+    {
+      "prompt": "The mitochondria is often called the powerhouse of",
+      "standard": "The mitochondria is often called the powerhouse of the cell. It is the site of cellular respiration, the process by which cells convert the energy in food into a form that can be used by the cell. The",
+      "speculative": "The mitochondria is often called the powerhouse of the cell. It is the site of cellular respiration, the process by which cells convert the energy in food into a form that can be used by the cell. The",
+      "identical": false
+    },
+    {
+      "prompt": "Quantum computing differs from classical computing in that",
+      "standard": "Quantum computing differs from classical computing in that it uses quantum mechanical phenomena such as superposition and entanglement to perform operations on data. This allows for the possibility of",
+      "speculative": "Quantum computing differs from classical computing in that it uses quantum mechanical phenomena such as superposition and entanglement to perform operations on data. This allows for the possibility of",
+      "identical": false
+    }
+  ]
+}

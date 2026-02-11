@@ -1,0 +1,182 @@
+{
+  "project": "CascadeExit: Adaptive Early-Exit Speculative Decoding",
+  "author": "Alireza Shojaei",
+  "start_time": "2026-02-10T02:24:19.158854",
+  "phases": {
+    "setup": {
+      "status": "complete",
+      "time": "2026-02-10T02:24:19.159183",
+      "details": {}
+    },
+    "phase1_model_loading": {
+      "status": "complete",
+      "time": "2026-02-10T02:25:03.401781",
+      "details": {
+        "num_layers": 28,
+        "hidden_size": 3072,
+        "vocab_size": 128256,
+        "total_params": 3212749824,
+        "time_seconds": 28.384597301483154
+      }
+    },
+    "phase2a_architecture": {
+      "status": "complete",
+      "time": "2026-02-10T02:25:15.294151",
+      "details": {
+        "adapter_params": 14164992,
+        "confidence_params": 2360835,
+        "overhead_percent": 0.5143826287546005
+      }
+    },
+    "phase2b_data": {
+      "status": "complete",
+      "time": "2026-02-10T02:36:10.153743",
+      "details": {
+        "train_samples": 20000,
+        "eval_samples": 480
+      }
+    },
+    "phase2c_training": {
+      "status": "complete",
+      "time": "2026-02-10T08:43:46.767807",
+      "details": {
+        "total_steps": 3750,
+        "epochs": 3,
+        "time_seconds": 21550.93146634102,
+        "final_losses": {
+          "L8": 4.282743646430969,
+          "L16": 3.4891427277088165,
+          "L22": 2.892742141342163
+        }
+      }
+    },
+    "phase3_evaluation": {
+      "status": "complete",
+      "time": "2026-02-10T08:46:11.179655",
+      "details": {
+        "eval_results": {
+          "8": {
+            "top1_accuracy": 0.4138617090671885,
+            "top5_accuracy": 0.6394243313763862,
+            "avg_ce_loss": 4.307374759515127,
+            "draft_cost_ratio": 0.2857142857142857,
+            "mean_conf_correct": 0.5679793206257514,
+            "mean_conf_wrong": 0.277440487161487,
+            "speedup_K3": 0.8917085065058585,
+            "speedup_K5": 0.698974314452524,
+            "speedup_K7": 0.5682045431561157
+          },
+          "16": {
+            "top1_accuracy": 0.5441536203522505,
+            "top5_accuracy": 0.770735485975212,
+            "avg_ce_loss": 3.5203635891278586,
+            "draft_cost_ratio": 0.5714285714285714,
+            "mean_conf_correct": 0.5749965340038409,
+            "mean_conf_wrong": 0.2742110634032646,
+            "speedup_K3": 0.7373514071331367,
+            "speedup_K5": 0.5539772196316152,
+            "speedup_K7": 0.43537155210341644
+          },
+          "22": {
+            "top1_accuracy": 0.6737687540769732,
+            "top5_accuracy": 0.8916340508806262,
+            "avg_ce_loss": 2.9264451464017234,
+            "draft_cost_ratio": 0.7857142857142857,
+            "mean_conf_correct": 0.5973991497634054,
+            "mean_conf_wrong": 0.30116518254095337,
+            "speedup_K3": 0.7249021490295481,
+            "speedup_K5": 0.563761006625227,
+            "speedup_K7": 0.45155771933588135
+          }
+        },
+        "time_seconds": 134.36564350128174
+      }
+    },
+    "phase4_calibration": {
+      "status": "complete",
+      "time": "2026-02-10T08:49:11.234862",
+      "details": {
+        "conf_results": {
+          "8": {
+            "threshold": 0.35,
+            "precision": 0.5945512652397156,
+            "exit_rate": 0.55859375,
+            "f1": 0.678752601146698
+          },
+          "16": {
+            "threshold": 0.39999999999999997,
+            "precision": 0.6529008150100708,
+            "exit_rate": 0.7350260615348816,
+            "f1": 0.7519765496253967
+          },
+          "22": {
+            "threshold": 0.35,
+            "precision": 0.7384309768676758,
+            "exit_rate": 0.8599446415901184,
+            "f1": 0.8250158429145813
+          }
+        },
+        "time_seconds": 180.02748107910156
+      }
+    },
+    "phase5_benchmarks": {
+      "status": "complete",
+      "time": "2026-02-10T09:24:15.579450",
+      "details": {
+        "standard_tok_per_sec": 20.06510993216919,
+        "best_speculative_speedup": 1.7579565393590277,
+        "cascade_speedup": 1.7579565393590277,
+        "time_seconds": 2104.291311264038
+      }
+    },
+    "phase6_quality": {
+      "status": "complete",
+      "time": "2026-02-10T09:25:16.184556",
+      "details": {
+        "match_rate": 20.0,
+        "time_seconds": 60.587942361831665
+      }
+    },
+    "phase7_perplexity": {
+      "status": "complete",
+      "time": "2026-02-10T09:26:20.649264",
+      "details": {
+        "perplexity_results": {
+          "full_model": {
+            "avg_ce_loss": 2.328577919678212,
+            "perplexity": 10.263335862320714
+          },
+          "exit_8": {
+            "avg_ce_loss": 4.306455379120291,
+            "perplexity": 74.17709272459794
+          },
+          "exit_16": {
+            "avg_ce_loss": 3.4734162893873837,
+            "perplexity": 32.24671860514579
+          },
+          "exit_22": {
+            "avg_ce_loss": 2.8939463199981272,
+            "perplexity": 18.06445725242769
+          }
+        },
+        "time_seconds": 64.44675159454346
+      }
+    },
+    "phase8_visualization": {
+      "status": "complete",
+      "time": "2026-02-10T09:26:27.304618",
+      "details": {
+        "time_seconds": 6.622664928436279
+      }
+    },
+    "phase9_complete": {
+      "status": "complete",
+      "time": "2026-02-10T09:26:27.333219",
+      "details": {
+        "total_runtime_hours": 7.031197274327278,
+        "best_speedup": 0.8443419232742307,
+        "cascade_speedup": 1.7579565393590277
+      }
+    }
+  }
+}
