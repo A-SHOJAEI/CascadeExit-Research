@@ -32,3 +32,10 @@ Thumbs.db
 # Outputs
 figures/
 wandb/
+mlflow.db
+*.log
+.eggs/
+*.egg-info
+dist/
+build/
+.mypy_cache/
