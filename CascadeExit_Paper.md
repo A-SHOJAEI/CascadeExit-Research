@@ -1,3 +1,5 @@
+> **Note: This is a project report, not a peer-reviewed publication.**
+
 # CascadeExit: Adaptive Early-Exit Speculative Decoding for LLM Inference Acceleration
 
 **Alireza Shojaei**

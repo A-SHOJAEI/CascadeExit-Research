@@ -4,6 +4,8 @@ Post-hoc method for accelerating LLM inference through confidence-calibrated ear
 
 ## Key Results
 
+> **Important Limitation:** The cascade approach achieves a 1.76x speedup but at a significant quality cost. Quality verification shows only a **20% match rate** between cascade outputs and full-model outputs — meaning **80% of generated sequences differ** from what the full model would produce. The speedup comes from routing most tokens (65%) through the shallowest exit (Layer 8), which has only 41.4% top-1 accuracy and 7.2x higher perplexity than the full model. Users should carefully evaluate whether this quality trade-off is acceptable for their use case.
+
 | Configuration | Speedup | Parameter Overhead |
 |--------------|---------|-------------------|
 | CascadeExit (L8/L16/L22) | **1.76x** | 0.51% (16.5M params) |
